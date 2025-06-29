@@ -2,7 +2,7 @@
 #include <cpu_rasterizer/types.hpp>
 #include <cpu_rasterizer/image_view.hpp>
 #include <algorithm>
-namespace cpu_rasterizer
+namespace rasterizer
 {
   void clear(image_view const& color_buffer, vector4f const& color)
   {

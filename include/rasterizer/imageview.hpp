@@ -2,7 +2,7 @@
 #include <cpu_rasterizer/types.hpp>
 #include <cstdint>
 
-namespace cpu_rasterizer
+namespace rasterizer
 {
   struct image_view 
   {
