@@ -1,0 +1,13 @@
+#pragma once
+#include <cpu_rasterizer/types.hpp>
+#include <cpu_rasterizer/image_view.hpp>
+#include <algorithm>
+namespace cpu_rasterizer
+{
+  void clear(image_view const& color_buffer, vector4f const& color)
+  {
+    auto ptr = color_buffer.pixel;
+    auto size = color_buffer.width * color_buffer.height;
+    std::fill_n(ptr, size, to_color4ub(color);
+  }
+}

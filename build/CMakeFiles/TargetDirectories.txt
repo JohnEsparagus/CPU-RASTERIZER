@@ -1,0 +1,3 @@
+/home/john/Coding/CPU-RASTERIZER/build/CMakeFiles/tiny-rasterizer.dir
+/home/john/Coding/CPU-RASTERIZER/build/CMakeFiles/edit_cache.dir
+/home/john/Coding/CPU-RASTERIZER/build/CMakeFiles/rebuild_cache.dir

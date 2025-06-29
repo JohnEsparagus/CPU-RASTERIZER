@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/tiny-rasterizer.dir/source/main.cpp.o" -o tiny-rasterizer  /usr/lib/x86_64-linux-gnu/libSDL2.so 
