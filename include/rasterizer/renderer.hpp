@@ -1,13 +1,11 @@
 #pragma once
-#include <cpu_rasterizer/types.hpp>
-#include <cpu_rasterizer/image_view.hpp>
-#include <algorithm>
+#include <rasterizer/types.hpp>
+#include <rasterizer/image_view.hpp>
+#include <rasterizer/draw_command.hpp>
 namespace rasterizer
 {
-  void clear(image_view const& color_buffer, vector4f const& color)
-  {
-    auto ptr = color_buffer.pixel;
-    auto size = color_buffer.width * color_buffer.height;
-    std::fill_n(ptr, size, to_color4ub(color);
-  }
+  void clear(image_view const& color_buffer, vector4f const& color);
+  void draw(image_view const& color_buffer, draw_command const& command);
+  bool point_in_triangle(std::int32_t x, std::int32_t y, vector4f v0, vector4f v1, vector4f v2);
+  
 }

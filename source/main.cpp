@@ -2,8 +2,8 @@
 #include <chrono>
 #include <iostream>
 #include <algorithm>
-#include <cpu_rasterizer/renderer.hpp>
-
+#include <rasterizer/renderer.hpp>
+#include <rasterizer/mesh.hpp>
 int main()
 {
   SDL_Init(SDL_INIT_VIDEO);
@@ -60,8 +60,8 @@ int main()
     auto now = clock::now();
     float dt = std::chrono::duration_cast<std::chrono::duration<float>>(now - last_frame_start).count();
     last_frame_start = now;
-
-    std::cout << dt << std::endl;
+    
+    std::cout << 1/dt << std::endl;
 
     using namespace rasterizer;
 
@@ -73,6 +73,27 @@ int main()
     };
 
     clear(color_buffer, {0.8f, 0.9f, 1.f, 1.f});
+    
+    vector3f vertices[] = 
+    {
+      {100.f, 100.f, 0.f},
+      {500.f,500.f,0.f},
+      {100.f,200.f,0.f}
+    };
+
+    mesh my_mesh = 
+    {
+      .positions = vertices,
+      .vertex_count = 3,
+      .color = {1.f,0.f,1.f,1.f}
+    };
+
+    draw_command command = 
+    {
+      .mesh = my_mesh
+    };
+
+    draw(color_buffer,command);
 
     SDL_Rect rect{.x = 0, .y = 0, .w = width, .h = height};
     SDL_BlitSurface(draw_surface, &rect, SDL_GetWindowSurface(window), &rect);
