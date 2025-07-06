@@ -455,6 +455,8 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
   /usr/include/c++/13/bits/ranges_base.h \
   /usr/include/c++/13/bits/ranges_cmp.h \
   /usr/include/c++/13/bits/ranges_util.h \
+  /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
@@ -467,6 +469,7 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/cmath \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/concepts \
   /usr/include/c++/13/cstdint \
@@ -476,15 +479,29 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/type_traits.h \
   /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/limits \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numbers \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
   /usr/include/c++/13/type_traits \
   /usr/include/endian.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/math.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdlib.h \
@@ -494,8 +511,17 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
