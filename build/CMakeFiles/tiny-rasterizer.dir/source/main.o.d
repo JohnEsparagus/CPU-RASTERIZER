@@ -345,4 +345,5 @@ CMakeFiles/tiny-rasterizer.dir/source/main.o: \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/types.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/image_view.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/draw_command.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/settings.hpp

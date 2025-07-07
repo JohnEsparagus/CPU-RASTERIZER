@@ -6,6 +6,7 @@ CMakeFiles/tiny-rasterizer.dir/source/main.o: /home/john/Coding/CPU-RASTERIZER/s
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/image_view.hpp \
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/renderer.hpp \
+  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/settings.hpp \
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/types.hpp \
   /usr/include/SDL2/SDL.h \
   /usr/include/SDL2/SDL_assert.h \
@@ -434,6 +435,7 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/image_view.hpp \
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/renderer.hpp \
+  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/settings.hpp \
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/types.hpp \
   /usr/include/alloca.h \
   /usr/include/c++/13/algorithm \
@@ -777,9 +779,7 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/usr/include/c++/13/bits/stl_algo.h:
-
-/usr/include/c++/13/cstddef:
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
@@ -857,6 +857,8 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
 
 /usr/include/c++/13/bits/istream.tcc:
 
+/home/john/Coding/CPU-RASTERIZER/include/rasterizer/settings.hpp:
+
 /usr/include/c++/13/bits/enable_special_members.h:
 
 /usr/include/c++/13/bits/exception.h:
@@ -907,8 +909,6 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
-/usr/include/c++/13/clocale:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/wmmintrin.h:
 
 /usr/include/c++/13/bits/align.h:
@@ -925,10 +925,6 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
 
 /usr/include/c++/13/cstdio:
 
-/usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/c++/13/bit:
-
 /usr/include/c++/13/bits/basic_string.tcc:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h:
@@ -937,7 +933,17 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
 
 /usr/include/SDL2/SDL_power.h:
 
-/usr/include/SDL2/SDL_messagebox.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/serializeintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vp2intersectvlintrin.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
 /usr/include/SDL2/SDL_loadso.h:
 
@@ -975,16 +981,6 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
 
 /usr/include/SDL2/SDL_haptic.h:
 
-/usr/include/SDL2/SDL_locale.h:
-
-/usr/include/c++/13/bits/localefwd.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/ia32intrin.h:
-
-/usr/include/SDL2/SDL_video.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
@@ -992,8 +988,6 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
 /home/john/Coding/CPU-RASTERIZER/include/rasterizer/types.hpp:
 
 /usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/SDL2/SDL_sensor.h:
 
@@ -1027,14 +1021,6 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
-/usr/include/SDL2/SDL_error.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/clflushoptintrin.h:
-
-/usr/include/c++/13/array:
-
 /usr/include/SDL2/SDL_assert.h:
 
 /usr/include/stdlib.h:
@@ -1056,6 +1042,20 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
 /usr/include/SDL2/SDL_metal.h:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
+
+/usr/include/SDL2/SDL_error.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/clflushoptintrin.h:
+
+/usr/include/c++/13/array:
+
+/usr/include/c++/13/bit:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/c++/13/clocale:
 
 /home/john/Coding/CPU-RASTERIZER/source/main.cpp:
 
@@ -1081,9 +1081,21 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
 
 /usr/include/SDL2/SDL_misc.h:
 
-/usr/include/c++/13/concepts:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/ia32intrin.h:
+
+/usr/include/SDL2/SDL_video.h:
 
 /usr/include/SDL2/SDL_audio.h:
+
+/usr/include/c++/13/concepts:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/SDL2/SDL_locale.h:
+
+/usr/include/c++/13/bits/localefwd.h:
+
+/usr/include/SDL2/SDL_messagebox.h:
 
 /usr/include/SDL2/SDL_log.h:
 
@@ -1179,17 +1191,9 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
 
 /usr/include/alloca.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+/usr/include/c++/13/bits/stl_algo.h:
 
-/usr/include/asm-generic/errno.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/serializeintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vp2intersectvlintrin.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+/usr/include/c++/13/cstddef:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 

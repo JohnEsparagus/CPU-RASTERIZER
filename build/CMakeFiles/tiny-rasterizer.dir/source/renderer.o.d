@@ -90,6 +90,7 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/image_view.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/draw_command.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/settings.hpp \
  /usr/include/c++/13/cmath /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
