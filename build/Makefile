@@ -130,6 +130,21 @@ tiny-rasterizer/fast:
 .PHONY : tiny-rasterizer/fast
 
 # target to build an object file
+source/cube.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/cube.o
+.PHONY : source/cube.o
+
+# target to preprocess a source file
+source/cube.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/cube.i
+.PHONY : source/cube.i
+
+# target to generate assembly for a file
+source/cube.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/cube.s
+.PHONY : source/cube.s
+
+# target to build an object file
 source/main.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/main.o
 .PHONY : source/main.o
@@ -168,6 +183,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tiny-rasterizer"
+	@echo "... source/cube.o"
+	@echo "... source/cube.i"
+	@echo "... source/cube.s"
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"

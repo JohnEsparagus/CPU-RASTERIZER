@@ -1,6 +1,6 @@
 #pragma once
 
-#include <rasterizer/types.hpp>
+#include <rasterizer/matrix.hpp>
 #include <rasterizer/mesh.hpp>
 #include <rasterizer/settings.hpp>
 
@@ -10,6 +10,6 @@ namespace  rasterizer
   {
     struct mesh mesh;
     enum cull_mode cull_mode = cull_mode::none;
-    matrix4x4f transform = matrix4x4f::identify();
+    matrix4x4f transform = matrix4x4f::identity();
   };
 }

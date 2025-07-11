@@ -341,9 +341,14 @@ CMakeFiles/tiny-rasterizer.dir/source/main.o: \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/ranges_algo.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/renderer.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/types.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/image_view.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/draw_command.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/cube.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/settings.hpp
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/vector.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/attribute.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/renderer.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/image_view.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/color.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/draw_command.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/matrix.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/settings.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/viewport.hpp

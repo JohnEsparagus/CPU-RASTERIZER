@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/john/Coding/CPU-RASTERIZER/source/cube.cpp" "CMakeFiles/tiny-rasterizer.dir/source/cube.o" "gcc" "CMakeFiles/tiny-rasterizer.dir/source/cube.o.d"
   "/home/john/Coding/CPU-RASTERIZER/source/main.cpp" "CMakeFiles/tiny-rasterizer.dir/source/main.o" "gcc" "CMakeFiles/tiny-rasterizer.dir/source/main.o.d"
   "/home/john/Coding/CPU-RASTERIZER/source/renderer.cpp" "CMakeFiles/tiny-rasterizer.dir/source/renderer.o" "gcc" "CMakeFiles/tiny-rasterizer.dir/source/renderer.o.d"
   )

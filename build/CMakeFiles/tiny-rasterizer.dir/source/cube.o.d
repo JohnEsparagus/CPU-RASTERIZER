@@ -1,7 +1,8 @@
-CMakeFiles/tiny-rasterizer.dir/source/renderer.o: \
- /home/john/Coding/CPU-RASTERIZER/source/renderer.cpp \
+CMakeFiles/tiny-rasterizer.dir/source/cube.o: \
+ /home/john/Coding/CPU-RASTERIZER/source/cube.cpp \
  /usr/include/stdc-predef.h \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/renderer.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/cube.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/vector.hpp \
  /usr/include/c++/13/cstdint \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -87,34 +88,4 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: \
  /usr/include/c++/13/bits/invoke.h /usr/include/c++/13/bits/ranges_util.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/image_view.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/color.hpp \
- /usr/include/c++/13/cmath /usr/include/c++/13/bits/requires_hosted.h \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
- /usr/include/c++/13/tr1/gamma.tcc \
- /usr/include/c++/13/tr1/special_function_util.h \
- /usr/include/c++/13/tr1/bessel_function.tcc \
- /usr/include/c++/13/tr1/beta_function.tcc \
- /usr/include/c++/13/tr1/ell_integral.tcc \
- /usr/include/c++/13/tr1/exp_integral.tcc \
- /usr/include/c++/13/tr1/hypergeometric.tcc \
- /usr/include/c++/13/tr1/legendre_function.tcc \
- /usr/include/c++/13/tr1/modified_bessel_func.tcc \
- /usr/include/c++/13/tr1/poly_hermite.tcc \
- /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/draw_command.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/matrix.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/attribute.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/settings.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/viewport.hpp
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/attribute.hpp

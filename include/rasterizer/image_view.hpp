@@ -1,5 +1,5 @@
 #pragma once
-#include <rasterizer/types.hpp>
+#include <rasterizer/color.hpp>
 #include <cstdint>
 
 namespace rasterizer
