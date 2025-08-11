@@ -24,6 +24,8 @@ int main()
   int mouse_x = 0;
   int mouse_y = 0;
 
+  using namespace rasterizer;
+
   image<std::uint32_t> depth_buffer;
 
   using clock = std::chrono::high_resolution_clock;
@@ -86,14 +88,14 @@ int main()
 	.width = (std::uint32_t)width,
 	.height = (std::uint32_t)height,
       },
-      .depth = depth_buffer.view();
+      .depth = depth_buffer.view(),
     };
     viewport  viewport 
     {
         .xmin = 0,
-    	.xmax = (std::int32_t)color_buffer.width,
+    	.xmax = (std::int32_t)width,
     	.ymin = 0,
-    	.ymax = (std::int32_t)color_buffer.height,
+    	.ymax = (std::int32_t)height,
     };
 
     clear(framebuffer.color, {0.8f, 0.9f, 1.f, 1.f});

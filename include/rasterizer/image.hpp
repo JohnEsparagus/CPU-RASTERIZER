@@ -28,7 +28,7 @@ namespace rasterizer
     }
     static image allocate(uint32_t width, uint32_t height) {
       return image {
-        .pixels = std::make_unique<Pixel[]>(new Pixel[width*height]),
+        .pixels = std::unique_ptr<Pixel[]>(new Pixel[width*height]),
         .width = width,
         .height = height,
       };

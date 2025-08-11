@@ -199,15 +199,15 @@ namespace rasterizer
         }
   
         std::int32_t xmin = std::max<std::int32_t>(viewport.xmin,0);
-        std::int32_t xmax = std::min<std::int32_t>(viewport.xmax, color_buffer.width) - 1;
+        std::int32_t xmax = std::min<std::int32_t>(viewport.xmax, framebuffer.color.width) - 1;
         std::int32_t ymin = std::max<std::int32_t>(viewport.ymin, 0);
-        std::int32_t ymax = std::min<std::int32_t>(viewport.ymax, color_buffer.height) - 1;
+        std::int32_t ymax = std::min<std::int32_t>(viewport.ymax, framebuffer.color.height) - 1;
         //-1 to avoid bounds
   
         xmin = std::max<float>(0, std::min({std::floor(v0.position.x), std::floor(v1.position.x), std::floor(v2.position.x)}));
-        xmax = std::min<float>(color_buffer.width - 1, std::max({std::floor(v0.position.x), std::floor(v1.position.x), std::floor(v2.position.x)}));
+        xmax = std::min<float>(framebuffer.color.width - 1, std::max({std::floor(v0.position.x), std::floor(v1.position.x), std::floor(v2.position.x)}));
         ymin = std::max<float>(0, std::min({std::floor(v0.position.y), std::floor(v1.position.y), std::floor(v2.position.y)}));
-        ymax = std::min<float>(color_buffer.height - 1, std::max({std::floor(v0.position.y), std::floor(v1.position.y), std::floor(v2.position.y)}));
+        ymax = std::min<float>(framebuffer.color.height - 1, std::max({std::floor(v0.position.y), std::floor(v1.position.y), std::floor(v2.position.y)}));
   
         for (std::int32_t y = ymin; y <= ymax; ++y)
         {

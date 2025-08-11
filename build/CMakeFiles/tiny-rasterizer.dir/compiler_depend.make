@@ -580,6 +580,7 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZ
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/attribute.hpp \
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/color.hpp \
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/draw_command.hpp \
+  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/framebuffer.hpp \
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/image_view.hpp \
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/matrix.hpp \
   /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \

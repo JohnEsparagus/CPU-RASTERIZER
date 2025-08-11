@@ -117,4 +117,5 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/attribute.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/settings.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/viewport.hpp
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/viewport.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/framebuffer.hpp
