@@ -19,8 +19,12 @@ namespace rasterizer
     a.x = a.x / a.w;
     a.y = a.y / a.w;
     a.z = a.z / a.w;
-
+    a.w = 1.f / a.w;
     return a;
+  }
+
+  inline float dot(vector4f const & v0, vector4f const & v1) {
+    return v0.x * v1.x + v0.y * v1.y + v0.z * v1.z + v0.w * v1.w;
   }
 
   inline vector4f operator*(float scalar, const vector4f& v)
@@ -47,7 +51,6 @@ namespace rasterizer
   {
     return {v.x,v.y,v.z,1.f};
   }
-
   inline vector4f operator - (vector4f const& v0, vector4f const& v1)
   {
     return {v0.x - v1.x, v0.y - v1.y, v0.z - v1.z, v0.w- v1.w};

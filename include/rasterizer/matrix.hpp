@@ -91,7 +91,7 @@ namespace rasterizer
         cos,0.f,sin,0.f,
         0.f,1.f,0.f,0.f,
         -sin,0.f,cos,0.f,
-        0.f,0.f,0.f,0.f,
+        0.f,0.f,0.f,1.f,
       };
     }
 };

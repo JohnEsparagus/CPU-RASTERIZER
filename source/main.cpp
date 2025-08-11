@@ -7,6 +7,9 @@
 #include <rasterizer/renderer.hpp>
 #include <rasterizer/viewport.hpp>
 #include <rasterizer/matrix.hpp>
+
+#include <rasterizer/framebuffer.hpp>
+#include <rasterizer/image.hpp>
 int main()
 {
   SDL_Init(SDL_INIT_VIDEO);
@@ -20,6 +23,8 @@ int main()
 
   int mouse_x = 0;
   int mouse_y = 0;
+
+  image<std::uint32_t> depth_buffer;
 
   using clock = std::chrono::high_resolution_clock;
   static auto start_time = clock::now();
@@ -39,6 +44,7 @@ int main()
         draw_surface = nullptr;
         width = event.window.data1;
         height = event.window.data2;
+	depth_buffer = {};
         break;
       }
       break;
@@ -60,6 +66,10 @@ int main()
       SDL_SetSurfaceBlendMode(draw_surface, SDL_BLENDMODE_NONE);
     }
 
+    if (!depth_buffer)
+    {
+      depth_buffer = image<std::uint32_t>::allocate(width,height);
+    }
     auto now = clock::now();
     float dt = std::chrono::duration_cast<std::chrono::duration<float>>(now - last_frame_start).count();
     last_frame_start = now;
@@ -68,14 +78,16 @@ int main()
     std::cout << 1/dt << std::endl;
 
     using namespace rasterizer;
-
-    image_view color_buffer
+    framebuffer framebuffer
     {
-      .pixels = (color4ub *)draw_surface->pixels,
-      .width = (std::uint32_t)width,
-      .height = (std::uint32_t)height,
+      .color
+      {
+	.pixels = (color4ub *)draw_surface->pixels,
+	.width = (std::uint32_t)width,
+	.height = (std::uint32_t)height,
+      },
+      .depth = depth_buffer.view();
     };
-
     viewport  viewport 
     {
         .xmin = 0,
@@ -84,24 +96,18 @@ int main()
     	.ymax = (std::int32_t)color_buffer.height,
     };
 
-    clear(color_buffer, {0.8f, 0.9f, 1.f, 1.f});
+    clear(framebuffer.color, {0.8f, 0.9f, 1.f, 1.f});
 
-    float cube_angle = elapsed.count();
+    float el_count = elapsed.count();
 
-		matrix4x4f model = matrix4x4f::scale(0.2f) * matrix4x4f::rotateZX(cube_angle) * matrix4x4f::rotateXY(cube_angle * 1.61f);
+    matrix4x4f transform = matrix4x4f::perspective(0.01f, 10.f, M_PI / 3.f, width * 1.f / height) * matrix4x4f::translate({0.f, 0.f, -10.f}) * matrix4x4f::rotateZX(el_count) * matrix4x4f::rotateXY(el_count * 1.61f);   
 
-		matrix4x4f view = matrix4x4f::translate({0.f, 0.f, -5.f});
-
-		matrix4x4f projection = matrix4x4f::perspective(0.01f, 10.f, M_PI / 3.f, width * 1.f / height);
-    
-    matrix4x4f transform = projection * view * model;
-    draw(color_buffer,
-        draw_command {
-            .mesh = cube,
-	    .cull_mode = cull_mode::cw,
-	    .transform = transform,
-        },
-	viewport
+    draw(framebuffer,
+      draw_command{
+        .mesh = cube,
+	.cull_mode = cull_mode::none,
+        .transform = transform,
+      },viewport
     );
 
     SDL_Rect rect{.x = 0, .y = 0, .w = width, .h = height};
