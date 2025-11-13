@@ -4,7 +4,7 @@ add_executable(tiny-rasterizer source/main.cpp)
 find_package(SDL2 REQUIRED)
 
 file(GLOB_RECURSE RASTERIZER_HEADERS "include/*.hpp")
-file(GLOB_RECURSE RASTERIZER_SOURCES "source/*.cpp")
+file(GLOB_RECURSE RASTERIZER_SOURCES "source/*.cpp" "source/meshes/*.cpp")
 
 add_executable(tiny-rasterizer ${RASTERIZER_HEADERS} ${RASTERIZER_SOURCES})
 target_include_directories(tiny-rasterizer PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include" "${SDL2_INCLUDE_DIRS}")

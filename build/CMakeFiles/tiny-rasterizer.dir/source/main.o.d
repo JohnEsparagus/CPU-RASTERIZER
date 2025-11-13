@@ -345,6 +345,7 @@ CMakeFiles/tiny-rasterizer.dir/source/main.o: \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/vector.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/attribute.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/pyramid.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/renderer.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/image_view.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/color.hpp \

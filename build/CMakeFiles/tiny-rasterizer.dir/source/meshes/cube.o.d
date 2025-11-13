@@ -1,7 +1,8 @@
-CMakeFiles/tiny-rasterizer.dir/source/renderer.o: \
- /home/john/Coding/CPU-RASTERIZER/source/renderer.cpp \
+CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o: \
+ /home/john/Coding/CPU-RASTERIZER/source/meshes/cube.cpp \
  /usr/include/stdc-predef.h \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/renderer.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/cube.hpp \
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \
  /home/john/Coding/CPU-RASTERIZER/include/rasterizer/vector.hpp \
  /usr/include/c++/13/cstdint \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -110,22 +111,4 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/image_view.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/color.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/draw_command.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/matrix.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/mesh.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/attribute.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/settings.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/viewport.hpp \
- /home/john/Coding/CPU-RASTERIZER/include/rasterizer/framebuffer.hpp \
- /usr/include/c++/13/cstdio /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /home/john/Coding/CPU-RASTERIZER/include/rasterizer/attribute.hpp

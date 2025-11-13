@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tiny-rasterizer.dir/source/cube.o"
-  "CMakeFiles/tiny-rasterizer.dir/source/cube.o.d"
   "CMakeFiles/tiny-rasterizer.dir/source/main.o"
   "CMakeFiles/tiny-rasterizer.dir/source/main.o.d"
+  "CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o"
+  "CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o.d"
+  "CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o"
+  "CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o.d"
   "CMakeFiles/tiny-rasterizer.dir/source/renderer.o"
   "CMakeFiles/tiny-rasterizer.dir/source/renderer.o.d"
   "tiny-rasterizer"

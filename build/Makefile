@@ -130,21 +130,6 @@ tiny-rasterizer/fast:
 .PHONY : tiny-rasterizer/fast
 
 # target to build an object file
-source/cube.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/cube.o
-.PHONY : source/cube.o
-
-# target to preprocess a source file
-source/cube.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/cube.i
-.PHONY : source/cube.i
-
-# target to generate assembly for a file
-source/cube.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/cube.s
-.PHONY : source/cube.s
-
-# target to build an object file
 source/main.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/main.o
 .PHONY : source/main.o
@@ -158,6 +143,36 @@ source/main.i:
 source/main.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/main.s
 .PHONY : source/main.s
+
+# target to build an object file
+source/meshes/cube.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o
+.PHONY : source/meshes/cube.o
+
+# target to preprocess a source file
+source/meshes/cube.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.i
+.PHONY : source/meshes/cube.i
+
+# target to generate assembly for a file
+source/meshes/cube.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.s
+.PHONY : source/meshes/cube.s
+
+# target to build an object file
+source/meshes/pyramid.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o
+.PHONY : source/meshes/pyramid.o
+
+# target to preprocess a source file
+source/meshes/pyramid.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.i
+.PHONY : source/meshes/pyramid.i
+
+# target to generate assembly for a file
+source/meshes/pyramid.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiny-rasterizer.dir/build.make CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.s
+.PHONY : source/meshes/pyramid.s
 
 # target to build an object file
 source/renderer.o:
@@ -183,12 +198,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tiny-rasterizer"
-	@echo "... source/cube.o"
-	@echo "... source/cube.i"
-	@echo "... source/cube.s"
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"
+	@echo "... source/meshes/cube.o"
+	@echo "... source/meshes/cube.i"
+	@echo "... source/meshes/cube.s"
+	@echo "... source/meshes/pyramid.o"
+	@echo "... source/meshes/pyramid.i"
+	@echo "... source/meshes/pyramid.s"
 	@echo "... source/renderer.o"
 	@echo "... source/renderer.i"
 	@echo "... source/renderer.s"

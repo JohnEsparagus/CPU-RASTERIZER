@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic "CMakeFiles/tiny-rasterizer.dir/source/main.o" "CMakeFiles/tiny-rasterizer.dir/source/cube.o" "CMakeFiles/tiny-rasterizer.dir/source/renderer.o" -o tiny-rasterizer  /usr/lib/x86_64-linux-gnu/libSDL2.so 
+/usr/bin/c++ -rdynamic "CMakeFiles/tiny-rasterizer.dir/source/main.o" "CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o" "CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o" "CMakeFiles/tiny-rasterizer.dir/source/renderer.o" -o tiny-rasterizer  /usr/lib/x86_64-linux-gnu/libSDL2.so 

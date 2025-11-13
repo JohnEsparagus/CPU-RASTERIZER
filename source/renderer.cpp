@@ -3,6 +3,7 @@
 #include <rasterizer/viewport.hpp>
 #include <algorithm>
 #include <cmath>
+#include <cstdio>
 
 namespace rasterizer
 {
@@ -23,6 +24,22 @@ namespace rasterizer
       a.color = (1.f - t) * v0.color + t * v1.color;
 
       return a;
+    }
+
+    bool depth_test_passed(depth_test_mode mode, std::uint32_t value, std::uint32_t reference)
+    {
+      switch (mode)
+      {
+	case depth_test_mode::always: return true;
+	case depth_test_mode::never: return false;
+	case depth_test_mode::less: return value < reference;
+	case depth_test_mode::less_equal: return value <= reference;
+	case depth_test_mode::greater: return value > reference;
+	case depth_test_mode::greater_equal: return value >= reference;
+	case depth_test_mode::equal: return value == reference;
+	case depth_test_mode::not_equal: return value != reference;
+      }
+      return true;
     }
 
     vertex * clip_triangle( vertex *triangle, vector4f equation, vertex * result)
@@ -131,6 +148,12 @@ namespace rasterizer
     auto size = color_buffer.width * color_buffer.height;
     std::fill(ptr, ptr + size, to_color4ub(color));
   }
+  void clear(image_view<std::uint32_t> const& depth_buffer, std::uint32_t value)
+  {
+    auto ptr = depth_buffer.pixels;
+    auto size = depth_buffer.width * depth_buffer.height;
+    std::fill(ptr, ptr + size, value);
+  }
   void draw(framebuffer const& framebuffer, draw_command const& command, viewport const& viewport)
   {
     for (std::uint32_t vertex_index = 0; vertex_index + 2 < command.mesh.count; vertex_index += 3)
@@ -165,6 +188,17 @@ namespace rasterizer
 	auto v0 = triangle_begin[0];
 	auto v1 = triangle_begin[1];
 	auto v2 = triangle_begin[2];
+
+	vector3f p0{v0.position.x, v0.position.y, v0.position.z};
+	vector3f p1{v1.position.x, v1.position.y, v1.position.z};
+	vector3f p2{v2.position.x, v2.position.y, v2.position.z};
+
+
+	vector3f edge1 = p1-p0;
+	vector3f edge2 = p2-p0;
+
+	vector3f faceNormal = cross_product(edge1 , edge2);
+	faceNormal = normalize(faceNormal);
 
         v0.position = perspective_divide(v0.position);
         v1.position = perspective_divide(v1.position);
@@ -230,9 +264,35 @@ namespace rasterizer
 	      delta1 /= delta_sum;
 	      delta2 /= delta_sum;
 	      delta3 /= delta_sum;
+
+	      if (framebuffer.depth)
+	      {
+		float z = delta1 * v0.position.z + delta2 * v1.position.z + delta3 * v2.position.z;
+		std::uint32_t depth = (0.5f + 0.5f * z) * std::uint32_t(-1);
+		auto &old_depth = framebuffer.depth.at(x,y);
+		
+		if (!depth_test_passed(command.depth.mode, depth, old_depth))
+		  continue;
+		if (command.depth.write)
+		  old_depth = depth;
+
+	      }
+
+	      //interpolated surface ( scratch a pixel shading effect)
+	      vector3f P = delta1 * p0 + delta2 * p1 + delta3 * p2;
+
+	      vector3f lightPos{-10.f,-10.f,10.f};
+	      vector3f lightDir = normalize(lightPos - P);
+
+	      float ambient = 0.05f;
+	      float diffuse = std::max(0.0f, dot(faceNormal,lightDir)); 
+
+	      float  facingRatio = ambient + diffuse;
+
 	      if (framebuffer.color)
 	      {
-	        framebuffer.color.at(x, y) = to_color4ub(delta1 * v0.color + delta2 * v1.color + delta3 * v2.color);
+		vector4f interpolatedColor = delta1 * v0.color + delta2 * v1.color + delta3 * v2.color;
+	        framebuffer.color.at(x, y) = to_color4ub(interpolatedColor * facingRatio);
 	      
 	      }
   	    }

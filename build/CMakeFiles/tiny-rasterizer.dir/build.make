@@ -83,24 +83,38 @@ CMakeFiles/tiny-rasterizer.dir/source/main.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tiny-rasterizer.dir/source/main.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/john/Coding/CPU-RASTERIZER/source/main.cpp -o CMakeFiles/tiny-rasterizer.dir/source/main.s
 
-CMakeFiles/tiny-rasterizer.dir/source/cube.o: CMakeFiles/tiny-rasterizer.dir/flags.make
-CMakeFiles/tiny-rasterizer.dir/source/cube.o: /home/john/Coding/CPU-RASTERIZER/source/cube.cpp
-CMakeFiles/tiny-rasterizer.dir/source/cube.o: CMakeFiles/tiny-rasterizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/john/Coding/CPU-RASTERIZER/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tiny-rasterizer.dir/source/cube.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tiny-rasterizer.dir/source/cube.o -MF CMakeFiles/tiny-rasterizer.dir/source/cube.o.d -o CMakeFiles/tiny-rasterizer.dir/source/cube.o -c /home/john/Coding/CPU-RASTERIZER/source/cube.cpp
+CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o: CMakeFiles/tiny-rasterizer.dir/flags.make
+CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o: /home/john/Coding/CPU-RASTERIZER/source/meshes/cube.cpp
+CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o: CMakeFiles/tiny-rasterizer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/john/Coding/CPU-RASTERIZER/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o -MF CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o.d -o CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o -c /home/john/Coding/CPU-RASTERIZER/source/meshes/cube.cpp
 
-CMakeFiles/tiny-rasterizer.dir/source/cube.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tiny-rasterizer.dir/source/cube.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/john/Coding/CPU-RASTERIZER/source/cube.cpp > CMakeFiles/tiny-rasterizer.dir/source/cube.i
+CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/john/Coding/CPU-RASTERIZER/source/meshes/cube.cpp > CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.i
 
-CMakeFiles/tiny-rasterizer.dir/source/cube.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tiny-rasterizer.dir/source/cube.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/john/Coding/CPU-RASTERIZER/source/cube.cpp -o CMakeFiles/tiny-rasterizer.dir/source/cube.s
+CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/john/Coding/CPU-RASTERIZER/source/meshes/cube.cpp -o CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.s
+
+CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o: CMakeFiles/tiny-rasterizer.dir/flags.make
+CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o: /home/john/Coding/CPU-RASTERIZER/source/meshes/pyramid.cpp
+CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o: CMakeFiles/tiny-rasterizer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/john/Coding/CPU-RASTERIZER/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o -MF CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o.d -o CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o -c /home/john/Coding/CPU-RASTERIZER/source/meshes/pyramid.cpp
+
+CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/john/Coding/CPU-RASTERIZER/source/meshes/pyramid.cpp > CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.i
+
+CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/john/Coding/CPU-RASTERIZER/source/meshes/pyramid.cpp -o CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.s
 
 CMakeFiles/tiny-rasterizer.dir/source/renderer.o: CMakeFiles/tiny-rasterizer.dir/flags.make
 CMakeFiles/tiny-rasterizer.dir/source/renderer.o: /home/john/Coding/CPU-RASTERIZER/source/renderer.cpp
 CMakeFiles/tiny-rasterizer.dir/source/renderer.o: CMakeFiles/tiny-rasterizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/john/Coding/CPU-RASTERIZER/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tiny-rasterizer.dir/source/renderer.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/john/Coding/CPU-RASTERIZER/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tiny-rasterizer.dir/source/renderer.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tiny-rasterizer.dir/source/renderer.o -MF CMakeFiles/tiny-rasterizer.dir/source/renderer.o.d -o CMakeFiles/tiny-rasterizer.dir/source/renderer.o -c /home/john/Coding/CPU-RASTERIZER/source/renderer.cpp
 
 CMakeFiles/tiny-rasterizer.dir/source/renderer.i: cmake_force
@@ -114,19 +128,21 @@ CMakeFiles/tiny-rasterizer.dir/source/renderer.s: cmake_force
 # Object files for target tiny-rasterizer
 tiny__rasterizer_OBJECTS = \
 "CMakeFiles/tiny-rasterizer.dir/source/main.o" \
-"CMakeFiles/tiny-rasterizer.dir/source/cube.o" \
+"CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o" \
+"CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o" \
 "CMakeFiles/tiny-rasterizer.dir/source/renderer.o"
 
 # External object files for target tiny-rasterizer
 tiny__rasterizer_EXTERNAL_OBJECTS =
 
 tiny-rasterizer: CMakeFiles/tiny-rasterizer.dir/source/main.o
-tiny-rasterizer: CMakeFiles/tiny-rasterizer.dir/source/cube.o
+tiny-rasterizer: CMakeFiles/tiny-rasterizer.dir/source/meshes/cube.o
+tiny-rasterizer: CMakeFiles/tiny-rasterizer.dir/source/meshes/pyramid.o
 tiny-rasterizer: CMakeFiles/tiny-rasterizer.dir/source/renderer.o
 tiny-rasterizer: CMakeFiles/tiny-rasterizer.dir/build.make
 tiny-rasterizer: /usr/lib/x86_64-linux-gnu/libSDL2.so
 tiny-rasterizer: CMakeFiles/tiny-rasterizer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/john/Coding/CPU-RASTERIZER/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable tiny-rasterizer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/john/Coding/CPU-RASTERIZER/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tiny-rasterizer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tiny-rasterizer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

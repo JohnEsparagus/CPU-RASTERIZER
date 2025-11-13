@@ -4,6 +4,7 @@
 #include <iostream>
 #include <algorithm>
 #include <rasterizer/cube.hpp>
+#include <rasterizer/pyramid.hpp>
 #include <rasterizer/renderer.hpp>
 #include <rasterizer/viewport.hpp>
 #include <rasterizer/matrix.hpp>
@@ -99,18 +100,19 @@ int main()
     };
 
     clear(framebuffer.color, {0.8f, 0.9f, 1.f, 1.f});
+    clear(framebuffer.depth, -1);
 
     float el_count = elapsed.count();
 
-    matrix4x4f transform = matrix4x4f::perspective(0.01f, 10.f, M_PI / 3.f, width * 1.f / height) * matrix4x4f::translate({0.f, 0.f, -10.f}) * matrix4x4f::rotateZX(el_count) * matrix4x4f::rotateXY(el_count * 1.61f);   
-
-    draw(framebuffer,
-      draw_command{
-        .mesh = cube,
-	.cull_mode = cull_mode::none,
-        .transform = transform,
-      },viewport
-    );
+    matrix4x4f transform = matrix4x4f::perspective(0.01f, 10.f, M_PI / 3.f, width * 1.f / height) * matrix4x4f::translate({0.f, 0.f, -6.f}) * matrix4x4f::rotateZX(el_count) * matrix4x4f::rotateXY(el_count * 1.61f);   
+	  draw(framebuffer,
+	    draw_command{
+	      .mesh = cube,
+		.cull_mode = cull_mode::cw,
+		.transform = transform,
+		.depth = {.mode = depth_test_mode::always,}
+	      },viewport
+	    );
 
     SDL_Rect rect{.x = 0, .y = 0, .w = width, .h = height};
     SDL_BlitSurface(draw_surface, &rect, SDL_GetWindowSurface(window), &rect);
